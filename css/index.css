@@ -253,7 +253,20 @@ header nav a {
     .top-content .text-container {
         width: 80%;
         text-align: center;
-        padding-bottom: 40px;
+        padding: 20px 0;
+    }
+    .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-content div {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
     }
 
 
