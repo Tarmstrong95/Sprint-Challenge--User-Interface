@@ -66,6 +66,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
 }
 
 h1, h2, h3, h4, h5 {
@@ -185,6 +186,9 @@ header nav a {
     text-decoration: none;
     color: black;
 }
+nav a:hover {
+    text-decoration: underline;
+}
 .box1{background: teal;}
 .box2{background: gold;}
 .box3{background: cadetblue;}
@@ -227,6 +231,7 @@ header nav a {
     border-radius: 10px;
     background: none;
     font-size: 16px;
+    transition: .1s ease-in-out;
 }
 .main-sec div button:hover {
     background: grey;
@@ -243,6 +248,14 @@ header nav a {
 .last-sec p {
     padding-left: 20px;
     margin-bottom: 22px;
+}
+.boxes>*{
+    transition: .1s ease-in-out;
+}
+.boxes>*:hover {
+    transform: scale(1.1);
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.294);
 }
 @media (max-width: 800px){
     /* Index css */
@@ -285,18 +298,16 @@ header nav a {
         width: 100vw;
     }
     .nav-cont nav{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .nav-cont nav a {
         padding: 10px 0;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         width: 100vw;
         text-align: center;
     }
-    .nav-cont nav a:first-child {
-        border-top: 1px solid black;
-    }
+
     .main-sec{
         flex-direction: column;
         align-items: center;
@@ -307,5 +318,19 @@ header nav a {
     }
     .last-sec {
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .nav-cont nav {
+        flex-direction: column;
+    }
+    .nav-cont nav a {
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    header .resp-img {
+        width: 200%;
+        transform: translateX(-25%)
     }
 }
