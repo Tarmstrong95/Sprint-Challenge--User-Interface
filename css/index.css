@@ -189,7 +189,7 @@ header nav a {
 nav a:hover {
     text-decoration: underline;
 }
-.box1{background: teal;}
+.box1{background: teal;/* animation: grow 2s*/ }
 .box2{background: gold;}
 .box3{background: cadetblue;}
 .box4{background: coral;}
@@ -200,6 +200,10 @@ nav a:hover {
 .box9{background: indigo;}
 .box10{background: dodgerblue;}
 
+@keyframes grow {
+    0% {transform: scale(1)}
+    100% {transform: scale(1.1)}
+}
 
 /* About css starts */
 
@@ -319,6 +323,9 @@ nav a:hover {
     .last-sec {
         padding: 0 20px;
     }
+    .middle-content .boxes .box {
+        width: 100px;
+    }
 }
 
 @media (max-width: 500px){
@@ -333,4 +340,50 @@ nav a:hover {
         width: 200%;
         transform: translateX(-25%)
     }
+    .middle-content .boxes .box {
+        width: 100px;
+    }
 }
+
+/* Contact css */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    align-items: center;
+}
+form input, form textarea{
+    width: 70%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+form textarea {
+    height: 50px;
+    width: 90%;
+}
+.contact-form-cont {
+    display: flex;
+}
+.contact-form-cont div {
+    flex: 2;
+    background: rgba(66, 66, 66, 0.061);
+    text-align: center;
+    padding: 32px 5px 27px 5px;
+}
+.contact-form-cont button {
+    background-color: rgba(0, 140, 255, 0.534);
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    margin: 0px 0 10px 0;
+}
+.ms {
+    padding: 30px 0;
+}
+
