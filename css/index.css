@@ -189,20 +189,22 @@ header nav a {
 nav a:hover {
     text-decoration: underline;
 }
-.box1{background: teal;/* animation: grow 2s*/ }
-.box2{background: gold;}
-.box3{background: cadetblue;}
-.box4{background: coral;}
-.box5{background: crimson;}
-.box6{background: forestgreen;}
-.box7{background: darkorchid;}
-.box8{background: hotpink;}
-.box9{background: indigo;}
-.box10{background: dodgerblue;}
+.box1{background: teal; animation: grow 1s infinite}
+.box2{background: gold; animation: grow 1s infinite; animation-delay: .1s;}
+.box3{background: cadetblue; animation: grow 1s infinite; animation-delay: .2s;}
+.box4{background: coral; animation: grow 1s infinite; animation-delay: .3s;}
+.box5{background: crimson; animation: grow 1s infinite; animation-delay: .4s;}
+.box6{background: forestgreen; animation: grow 1s infinite; animation-delay: .9s;}
+.box7{background: darkorchid; animation: grow 1s infinite; animation-delay: .8s;}
+.box8{background: hotpink; animation: grow 1s infinite; animation-delay: .7s;}
+.box9{background: indigo; animation: grow 1s infinite; animation-delay: .6s;}
+.box10{background: dodgerblue; animation: grow 1s infinite; animation-delay: .5s;}
 
 @keyframes grow {
-    0% {transform: scale(1)}
-    100% {transform: scale(1.1)}
+    0% {transform: scale(1); border-radius: 0;}
+    50% {transform: scale(1.1); border-radius: 5px; box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.308);}
+    100% {transform: scale(1); border-radius: 0;}
+
 }
 
 /* About css starts */
@@ -254,11 +256,9 @@ nav a:hover {
     margin-bottom: 22px;
 }
 .boxes>*{
-    transition: .1s ease-in-out;
+    transition: .2s ease-in-out;
 }
 .boxes>*:hover {
-    transform: scale(1.1);
-    border-radius: 3px;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.294);
 }
 @media (max-width: 800px){
