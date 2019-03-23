@@ -377,6 +377,9 @@ form textarea {
     text-align: center;
     padding: 32px 5px 27px 5px;
 }
+.contact-form-cont div h2 {
+    font-weight: bold;
+}
 .contact-form-cont button {
     background-color: rgba(0, 140, 255, 0.534);
     border-radius: 5px;
