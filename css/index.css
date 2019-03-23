@@ -47,6 +47,18 @@ table {
 	border-spacing: 0;
 }
 
+/*
+*
+*
+*
+ reset end 
+*
+*
+*
+*
+*/
+
+
 * {
     box-sizing: border-box;
 }
@@ -54,6 +66,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
 }
 
 h1, h2, h3, h4, h5 {
@@ -104,7 +117,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -144,3 +157,238 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/*
+*
+*
+    My css starts
+*
+*
+*/
+
+
+/* Index css starts */
+header {
+    margin-bottom: 21px;
+}
+header .nav-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0 37px 0;
+    font-size: 14px;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.box1{background: teal; animation: grow 1s infinite}
+.box2{background: gold; animation: grow 1s infinite; animation-delay: .1s;}
+.box3{background: cadetblue; animation: grow 1s infinite; animation-delay: .2s;}
+.box4{background: coral; animation: grow 1s infinite; animation-delay: .3s;}
+.box5{background: crimson; animation: grow 1s infinite; animation-delay: .4s;}
+.box6{background: forestgreen; animation: grow 1s infinite; animation-delay: .9s;}
+.box7{background: darkorchid; animation: grow 1s infinite; animation-delay: .8s;}
+.box8{background: hotpink; animation: grow 1s infinite; animation-delay: .7s;}
+.box9{background: indigo; animation: grow 1s infinite; animation-delay: .6s;}
+.box10{background: dodgerblue; animation: grow 1s infinite; animation-delay: .5s;}
+
+@keyframes grow {
+    0% {transform: scale(1); border-radius: 0;}
+    50% {transform: scale(1.1); border-radius: 5px; box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.308);}
+    100% {transform: scale(1); border-radius: 0;}
+
+}
+
+/* About css starts */
+
+.about-sec {
+    padding: 1px 19px 19px 19px;
+    border-bottom: 1px dashed black;
+}
+.main-sec {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.main-sec div {
+    width: 370px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin: 30px 0px;
+}
+.main-sec div img {
+    margin-bottom: 10px;
+}
+.main-sec div p {
+    margin-bottom: 20px;
+}
+.main-sec div button {
+    width: 130px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: none;
+    font-size: 16px;
+    transition: .1s ease-in-out;
+}
+.main-sec div button:hover {
+    cursor: pointer;
+}
+.b1:hover{background: teal; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+.b2:hover{background: gold; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+.b3:hover{background: crimson; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+.b4:hover{background: coral; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+
+.last-sec {
+    padding: 20px 0;
+}
+.last-sec h2 {
+    padding-left: 20px;
+}
+.last-sec p {
+    padding-left: 20px;
+    margin-bottom: 22px;
+}
+.boxes>*{
+    transition: .2s ease-in-out;
+}
+.boxes>*:hover {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.294);
+}
+@media (max-width: 800px){
+    /* Index css */
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-content .text-container {
+        width: 80%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-content div {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* about css */
+    body{
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100vw;
+    }
+    header .nav-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .resp-img {
+        width: 100vw;
+    }
+    .nav-cont nav{
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-cont nav a {
+        padding: 10px 0;
+        border-bottom: 2px solid black;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .main-sec{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-sec div {
+        text-align: center;
+        width: 90%;
+    }
+    .last-sec {
+        padding: 0 20px;
+    }
+    .middle-content .boxes .box {
+        width: 100px;
+    }
+}
+
+@media (max-width: 500px){
+    .nav-cont nav {
+        flex-direction: column;
+    }
+    .nav-cont nav a {
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    header .resp-img {
+        width: 200%;
+        transform: translateX(-25%)
+    }
+    .middle-content .boxes .box {
+        width: 100px;
+    }
+}
+
+/* Contact css */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    align-items: center;
+}
+form input, form textarea{
+    width: 70%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+form textarea {
+    height: 50px;
+    width: 90%;
+}
+.contact-form-cont {
+    display: flex;
+}
+.contact-form-cont div {
+    flex: 2;
+    background: rgba(66, 66, 66, 0.061);
+    text-align: center;
+    padding: 32px 5px 27px 5px;
+}
+.contact-form-cont div h2 {
+    font-weight: bold;
+}
+.contact-form-cont button {
+    background-color: rgba(0, 140, 255, 0.534);
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    margin: 0px 0 10px 0;
+}
+.ms {
+    padding: 30px 0;
+}
+
