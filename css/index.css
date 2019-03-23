@@ -240,11 +240,13 @@ nav a:hover {
     transition: .1s ease-in-out;
 }
 .main-sec div button:hover {
-    background: grey;
-    color:white;
-    border: 1px solid black;
     cursor: pointer;
 }
+.b1:hover{background: teal; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+.b2:hover{background: gold; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+.b3:hover{background: crimson; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+.b4:hover{background: coral; border: 1px solid rgba(0, 0, 0, 0.253); transform: scale(1.05);}
+
 .last-sec {
     padding: 20px 0;
 }
